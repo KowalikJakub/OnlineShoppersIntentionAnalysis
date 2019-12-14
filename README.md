@@ -4,7 +4,7 @@
 
 An analysis of some E-Commerce data, for a school project. Nothing fancy just a grid-searched, cross-validated decision tree and KNN (project requirements).
 
-Used data was obtained from the [UCI Machine Learning RepositorySource]([https://link](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset?fbclid=IwAR2YC4nVShJIQQ5XFEvJjhc1vRbeQVRkpRU55CMDYx9339-xoLehX3IqvCU)). Which consists of ~12k observations and 18 variables. Some variables are behavioral data and the rest is declarative-ish.
+Used data was obtained from the [UCI Machine Learning RepositorySource](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset?fbclid=IwAR2YC4nVShJIQQ5XFEvJjhc1vRbeQVRkpRU55CMDYx9339-xoLehX3IqvCU). Which consists of ~12k observations and 18 variables. Some variables are behavioral data and the rest is declarative-ish.
 
 The goal was to model whether a user in a session has made an e-commerce transaction or not. 
 
