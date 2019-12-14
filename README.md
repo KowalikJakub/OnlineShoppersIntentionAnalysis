@@ -2,7 +2,7 @@
 
 ## tl;dr
 
-An analysis of some E-Commerce data, for a school project. Nothing fancy just a grid-searched, cross-validated decision tree and KNN (project requirements).
+An analysis of some E-Commerce data, for a school project. Nothing fancy just a grid-searched, cross-validated fully-connected neural network, decision tree and KNN.
 
 Used data was obtained from the [UCI Machine Learning RepositorySource](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset?fbclid=IwAR2YC4nVShJIQQ5XFEvJjhc1vRbeQVRkpRU55CMDYx9339-xoLehX3IqvCU). Which consists of ~12k observations and 18 variables. Some variables are behavioral data and the rest is declarative-ish.
 
@@ -24,11 +24,14 @@ Data sample below:
 Modelling was done on 60% of the data being the training set (this was used for [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) and the rest for calculating the metrics below.
 All metrics were specified in the project requirements
 
-|              | accuracy            | sensitivity         | specifity           |
-|--------------|---------------------|---------------------|---------------------|
-| KNN          | 0\.8801703163017032 | 0\.3237221494102228 | 0\.9820100743583593 |
-| DecisionTree | 0\.9018653690186537 | 0\.5334207077326344 | 0\.9692971935715999 |
+|classifier   |accuracy          |sensitivity       |specifity         |f1                |
+|-------------|------------------|------------------|------------------|------------------|
+|NeuralNetwork|0.8955798864557989|0.6055045871559633|0.9486687455025186|0.6421125781792911|
+|KNN          |0.8801703163017032|0.3237221494102228|0.9820100743583593|0.4552995391705069|
+|DecisionTree |0.9018653690186537|0.5334207077326344|0.9692971935715999|0.6271186440677966|
+
+![nn_lift_curve](./graphs/nn_lift_curve.png)
 
 ![knn_lift_curve](./graphs/knn_lift_curve.png)
 
-![knn_lift_curve](./graphs/dt_lift_curve.png)
+![dt_lift_curve](./graphs/dt_lift_curve.png)
